@@ -1,0 +1,168 @@
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* fix 按钮和碗 */
+.apply-box {
+  height: 1.084rem;
+  display: block;
+  position: fixed;
+  bottom: 3rem;
+  right: 0;
+  z-index: 200;
+}
+.btn {
+  height: 1.084rem;
+}
+@keyframes rotation{
+  0% {transform: rotate(-30deg);}
+  50%  {transform: rotate(-60deg);}
+  100% {transform: rotate(-30deg);}
+}
+.wan {
+  position: absolute;
+  height: 1.11rem;
+  left: 1.7rem;
+  width: 1.4rem;
+  bottom: -0.1rem;
+  transform: rotate(-60deg);
+  animation: rotation 4s linear infinite;
+  transform-origin: 18px 50%;
+}
+.apply-box img {
+  max-height: 100%;
+  width: auto
+}
+
+
+.bg-common {
+  width: 100%;
+  position: relative;
+  margin-top: -1px;
+}
+
+/* two 婴儿图 */
+.photos {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 100;
+  top: 2.74rem;
+  box-sizing: border-box;
+  padding: 0.2rem 0.4rem;
+}
+.photos .baby {
+  display: inline-block;
+}
+.baby-up {
+  width: 100%;
+  height: 4.44rem;
+}
+.baby-left {
+  width: 2.126rem;
+  height: 4.44rem;
+  font-size: 0;
+  float: left;
+  left: 0;
+}
+.baby-left .baby {
+  width: 2.126rem;
+}
+.baby-left .baby + .baby{
+  margin-top: 0.188rem;
+}
+
+.baby-right {
+  width: 4.44rem;
+  height: 4.44rem;
+  float: right;
+}
+.baby-right .baby {
+  width: 4.44rem;
+}
+.baby-down {
+  margin-top: .19rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.baby-down .baby {
+  width: 1.59rem;
+}
+
+/* three - swiper */
+.qs-box {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 100;
+  top: 2.74rem;
+  box-sizing: border-box;
+  padding: 0.2rem 0.4rem;
+}
+.swiper-slide {
+  /* https://www.cnblogs.com/javascripter/p/10404912.html */
+  touch-action: none;
+}
+.swiper-pagination {
+  text-align: center;
+  margin-top: .35rem;
+  left: 50%;
+  transform: translateX(-50%)
+}
+.my-bullet {
+  opacity: .8;
+  width: .19rem;
+  height: .19rem;
+  display: inline-block;
+  border-radius: 100%;
+  margin: 0 4px;
+  border: 1px solid #fff;
+}
+.my-bullet-active {
+  background: #fff;
+  opacity: 1;
+}
+
+/* four kols */
+.kols {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 100;
+  top: 2.44rem;
+  box-sizing: border-box;
+  padding: 0.2rem 0.4rem;
+  cursor: pointer;
+}
+
+.kol-img {
+  width: 100%;
+  height: auto;
+  z-index: 120;
+  left: 0;
+  margin-top: .24rem;
+}
+.kols-more {
+  text-align: right;
+  margin-top: .36rem;
+}
+.text {
+  font-family: PingFangSC-Regular;
+  font-size: .3rem;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.shop {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 100;
+  bottom: 1.7rem;
+  box-sizing: border-box;
+  padding: 0.2rem 0.4rem;
+}
